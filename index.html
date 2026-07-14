@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Jimuel Mercene</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Jimuel Mercene</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                 <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                 <li><a href="#services" onclick="toggleMenu()">Services</a></li>
+                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="Jimuel profile picture" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="section__text__h1">Jimuel Mercene</h1>
+            <p class="section__text__p2">Administrative Assistant</p>
+            <div class="btn-container">
+                <button
+                  class="btn btn-color-2"
+                   onclick="window.open('./assets/Jimuel Mercene CV.pdf')"
+                   >
+                   Download CV
+                </button>
+                <button class="btn btn-color-1"onclick="location.href='./#contact'">
+                   Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img
+                 src="./assets/linkedin.png" 
+                 alt="My LinkedIn profile"
+                 class="icon"
+                 onclick="location.href='https://www.linkedin.com/in/jimuel-mercene-0b4ab826b/'"
+                 />
+                <img
+                 src="./assets/calendly.png" 
+                 alt="My Calendly profile"
+                 class="icon"
+                 onclick="location.href='https://calendly.com'"
+                 />
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+           <div class="section__pic-container">
+            <img 
+              src="./assets/about-pic.png" 
+              alt="Profile picture" 
+              class="about-pic"
+             />
+           </div>
+           <div class="about-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <img 
+                      src="./assets/experience.png" 
+                      alt="experience icon"
+                      class="icon"
+                    />
+                    <h3>Experience</h3> 
+                    <p>5+ Years <br />Marketing  <br /> Administrative & Customer Support</p>
+                </div>
+                <div class="details-container">
+                    <img 
+                      src="./assets/education.png" 
+                      alt="education icon"
+                      class="icon"
+                    />
+                    <h3>Education</h3> 
+                    <p>B.Sc. Bachelors Degree <br />Business Administration <br /> Major in Marketing</p>
+                </div>
+            </div>
+            <div class="text-container">
+                <p>I help business owners and teams operate at their highest level by managing the day-to-day operations, workflows, and administrative details that keep a company moving forward. With a solid foundation spanning hospitality, hands-on customer service, and business administration, I bring a proactive approach to organizing information, coordinating tasks, and executing marketing support with genuine precision. By streamlining your back-end tasks and maintaining exceptional, responsive communication with your clients, I clear the clutter from your daily schedule. If you are looking for a reliable partner to handle the operational heavy lifting so you can fully step away from the busywork and focus entirely on scaling your business, let's connect.</p>
+            </div>
+           </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" 
+        />
+    </section>
+   <section id="experience">
+  <p class="section__text__p1">Explore My</p>
+  <h1 class="title">Experience</h1>
+  
+  <!-- Main Carousel Container -->
+  <div class="experience-carousel-container">
+    <button class="carousel-arrow left-arrow" onclick="moveCarousel(-1)">&#8249;</button>
+    
+    <div class="experience-slider-window">
+      <div class="experience-slider-track" id="experienceTrack">
+        
+        <!-- PAGE 1 (CONTAINS BOX 1 & 2) -->
+        <div class="carousel-page">
+          <div class="about-containers">
+            <!-- Box 1 -->
+            <div class="details-container">
+              <h2 class="experience-sub-title">Slot Attendance</h2>
+              <div class="article-container">
+                <ul style="text-align: left; list-style-type: disc; margin-left: 20px; line-height: 1.8;">
+                  <li>Provide professional customer support by assisting guests and responding promptly to inquiries.</li>
+                  <li>Monitor gaming operations and report technical concerns to appropriate departments to ensure uninterrupted service.</li>
+                  <li>Maintain accurate operational records while following company policies and compliance procedures.</li>
+                  <li>Coordinate with multiple departments to support smooth daily operations and deliver a positive guest experience.</li>
+                  <li>Resolve customer concerns professionally while maintaining high standards of service.</li>
+                </ul>
+              </div>
+            </div>
+            <!-- Box 2 -->
+            <div class="details-container">
+              <h2 class="experience-sub-title">Administrative Intern</h2>
+              <div class="article-container">
+                <ul style="text-align: left; list-style-type: disc; margin-left: 20px; line-height: 1.8;">
+                  <li>Supported daily administrative operations through document preparation, filing, and records management.</li>
+                  <li>Performed accurate data entry and maintained organized office files for efficient document retrieval.</li>
+                  <li>Assisted in preparing reports, organizing business documents, and maintaining office records.</li>
+                  <li>Coordinated with colleagues to complete administrative tasks within deadlines.</li>
+                  <li>Maintained confidentiality and accuracy when handling office records and information.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PAGE 2 (CONTAINS BOX 3 & 4) -->
+        <div class="carousel-page">
+          <div class="about-containers">
+            <!-- Box 3 -->
+            <div class="details-container">
+              <h2 class="experience-sub-title">Barista</h2>
+              <div class="article-container">
+                <ul style="text-align: left; list-style-type: disc; margin-left: 20px; line-height: 1.8;">
+                  <li>Delivered excellent customer service by assisting customers with product inquiries and recommendations.</li>
+                  <li>Processed cash and electronic payments accurately using POS systems.</li>
+                  <li>Maintained inventory levels and organized workstations to support daily operations.</li>
+                  <li>Built positive customer relationships through effective communication and professional service.</li>
+                  <li>Worked collaboratively with team members to ensure efficient store operations during high-volume periods.</li>
+                </ul>
+              </div>
+            </div>
+            <!-- Box 4 -->
+            <div class="details-container">
+              <h2 class="experience-sub-title">Service Ambassador</h2>
+              <div class="article-container">
+                <ul style="text-align: left; list-style-type: disc; margin-left: 20px; line-height: 1.8;">
+                  <li>Delivered exceptional customer service by assisting guests with inquiries and ensuring a positive dining experience.</li>
+                  <li>Coordinated with kitchen and service teams to ensure accurate and timely order fulfillment.</li>
+                  <li>Maintained accurate order information while adhering to company standards and operational procedures.</li>
+                  <li>Addressed customer concerns professionally and resolved service issues promptly to enhance guest satisfaction.</li>
+                  <li>Supported daily restaurant operations in a fast-paced, high-volume hospitality environment while maintaining quality service standards.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PAGE 3 (CONTAINS 1 BOX + PLACEHOLDER) -->
+        <div class="carousel-page">
+          <div class="about-containers">
+            <!-- Box 5 -->
+            <div class="details-container">
+              <h2 class="experience-sub-title">Service Crew</h2>
+              <div class="article-container">
+                <ul style="text-align: left; list-style-type: disc; margin-left: 20px; line-height: 1.8;">
+                  <li>Provided friendly and efficient customer service while maintaining company quality standards.</li>
+                  <li>Processed customer orders and payments accurately using point-of-sale (POS) systems.</li>
+                  <li>Maintained inventory, cleanliness, and organization of assigned work areas.</li>
+                  <li>Collaborated with team members to deliver efficient service during high-volume operations.</li>
+                  <li>Demonstrated strong multitasking, communication, and teamwork skills during peak operating hours.</li>
+                  <li>Assisted in achieving daily operational goals through collaboration and attention to detail.</li>
+                </ul>
+              </div>
+            </div>
+            <!-- Placeholder Box (Matches size, but styles down dramatically) -->
+            <div class="details-container placeholder-container">
+              <div class="placeholder-text">Let's Fill it in</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    
+    <button class="carousel-arrow right-arrow" onclick="moveCarousel(1)">&#8250;</button>
+  </div>
+
+  <!-- NEW INDICATOR DOTS CONTAINER -->
+  <div class="carousel-dots" id="carouselDots"></div>
+  
+  <!-- Your original bottom down arrow -->
+  <img 
+    src="./assets/arrow.png" 
+    alt="Arrow icon" 
+    class="icon arrow" 
+    onclick="location.href='./#services'"
+  />
+</section>
+
+
+
+    </div>
+  </div>
+  <img 
+    src="./assets/arrow.png" 
+    alt="Arrow icon" 
+    class="icon arrow" 
+    onclick="location.href='./#services'"
+  />
+</section>
+    <section id="services">
+        <p class="section__text__p1">Browse My</p>
+        <h1 class="title">Services</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/Ser 1.png" 
+                    alt="Service 1" 
+                    class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">Admin Support</h2>
+                <div class="btn-container">
+                    
+                    <button 
+                    class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/'"
+                    >
+                        Proceed
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/Ser 2.png" 
+                    alt="Service 2" 
+                    class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">Marketing Support</h2>
+                <div class="btn-container">
+                    
+                    <button 
+                    class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/'"
+                    >
+                        Proceed
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/Ser 3.png" 
+                    alt="Service 3" 
+                    class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">Customer Service</h2>
+                <div class="btn-container">
+                   
+                    <button 
+                    class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/'"
+                    >
+                        Proceed
+                    </button>
+                </div>
+            </div>
+         </div>
+        </div>
+        <img 
+         src="./assets/arrow.png" 
+         alt="Arrow icon" 
+         class="icon arrow" 
+         onclick="location.href='./#contact'" 
+        />
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get In Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img 
+                 src="./assets/email.png" 
+                 alt="email icon" 
+                 class="icon contact-icon email-icon"
+                />
+                <p><a href="https://mail.google.com/mail/?view=cm&to=mercenejimuel@gmail.com">mercenejimuel@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img 
+                 src="./assets/linkedin.png" 
+                 alt="linkedin icon" 
+                 class="icon contact-icon"
+                />
+                <p><a href="https://www.linkedin.com/in/jimuel-mercene-0b4ab826b/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                 <li><a href="#about">About</a></li>
+                 <li><a href="#experience">Experience</a></li>
+                 <li><a href="#services">Services</a></li>
+                 <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2026 Jimuel Mercene. All Rights Reserved. </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

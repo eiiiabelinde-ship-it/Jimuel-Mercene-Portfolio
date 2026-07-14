@@ -1,0 +1,547 @@
+@media screen and (max-width: 1400px) {
+    #profile {
+        height: 83vh;
+        margin-bottom: 6rem;
+    }
+    .about-containers {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #desktop-nav {
+        display: none;
+    }
+    #hamburger-nav {
+        display: flex;
+    }
+    #experience, 
+    .experience-details-container {
+        margin-top: 2rem;
+    }
+    #profile, 
+    .section-container {
+        display: block;
+    }
+    .arrow {
+        display: none;
+    }
+    section, 
+    .section-container {
+        height: fit-content;
+    }
+    section {
+        margin: 0 5%;
+    }
+    .section__pic-container {
+        width: 275px;
+        height: 275px;
+        margin: 0 auto 2rem;
+    }
+    .about-containers {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #contact, footer {
+        height: 40vh;
+    }
+    #profile {
+        height: 83vh;
+        margin-bottom: 0; 
+    }
+    article {
+        font-size: 1rem;
+    }
+    footer nav {
+        height: fit-content;
+        margin-bottom: 2rem;
+    }
+    .about-containers, .contact-info-upper-container, .btn-container {
+        flex-wrap: wrap;
+    }
+    .contact-info-container {
+        margin: 0;
+    }
+    .contact-info-container p, 
+    .nav-links li a {
+        font-size: 1rem;
+    }
+    .experience-sub-title {
+        font-size: 1.25rem;
+    }
+    .logo {
+        font-size: 1.5rem;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+    .section__pic-container {
+        width: auto;
+        height: 46vw;
+        justify-content: center;
+    }
+    .section__text__p2 {
+        font-size: 1.25rem;
+    }
+    .title {
+        font-size: 2rem;
+    }
+    .text-container {
+        text-align: justify;
+    }
+    }
+
+
+/* ============================= */
+/* UNIVERSAL RESPONSIVE MEDIA CSS */
+/* ============================= */
+
+/* --------------------------- */
+/* CV POPUP RESPONSIVE ADJUSTMENTS */
+/* --------------------------- */
+
+/* Default Desktop */
+.cv-popup {
+    display: flex;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(5px);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.cv-popup-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 2rem;
+    width: 400px;
+    max-width: 90%;
+    text-align: center;
+    position: relative;
+}
+
+/* Tablet screens (601px - 1200px) */
+@media screen and (max-width: 1200px) and (min-width: 601px) {
+    .cv-popup-content {
+        width: 340px;
+        padding: 1.5rem;
+    }
+    .cv-popup-content .g-recaptcha {
+        transform: scale(0.55);
+        transform-origin: top center;
+        margin: 0.5rem auto;
+        display: block;
+    }
+}
+
+/* Mobile screens (376px - 600px) */
+@media screen and (max-width: 600px) and (min-width: 376px) {
+    .cv-popup-content {
+        width: 280px;
+        padding: 1rem;
+    }
+    .cv-popup-content .g-recaptcha {
+        transform: scale(0.5);
+    }
+}
+
+/* Extra small mobile (iPhone SE / 375px width) */
+@media screen and (max-width: 375px) {
+    .cv-popup-content {
+        width: 95%;
+        max-width: 240px;
+        padding: 0.8rem;
+        border-radius: 1.5rem;
+    }
+    .cv-popup-content .g-recaptcha {
+        transform: scale(0.42);
+    }
+}
+
+/* Ultra small phones (320px width) */
+@media screen and (max-width: 320px) {
+    .cv-popup-content {
+        width: 95%;
+        max-width: 220px;
+        padding: 0.7rem;
+    }
+    .cv-popup-content .g-recaptcha {
+        transform: scale(0.38);
+    }
+}
+
+/* --------------------------- */
+/* PROFILE SECTION RESPONSIVE */
+/* --------------------------- */
+@media screen and (max-width: 1400px) {
+    #profile {
+        height: 83vh;
+        margin-bottom: 6rem;
+    }
+    .about-containers {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #desktop-nav { display: none; }
+    #hamburger-nav { display: flex; }
+    #experience, .experience-details-container { margin-top: 2rem; }
+    #profile, .section-container { display: block; }
+    .arrow { display: none; }
+    section, .section-container { height: fit-content; }
+    section { margin: 0 5%; }
+    .section__pic-container {
+        width: 275px;
+        height: 275px;
+        margin: 0 auto 2rem;
+    }
+    .about-containers { margin-top: 0; }
+}
+
+@media screen and (max-width: 600px) {
+    #contact, footer { height: 40vh; }
+    #profile { height: 83vh; margin-bottom: 0; }
+    article { font-size: 1rem; }
+    footer nav { height: fit-content; margin-bottom: 2rem; }
+    .about-containers, .contact-info-upper-container, .btn-container { flex-wrap: wrap; }
+    .contact-info-container { margin: 0; }
+    .contact-info-container p, .nav-links li a { font-size: 1rem; }
+    .experience-sub-title { font-size: 1.25rem; }
+    .logo { font-size: 1.5rem; }
+    .nav-links { flex-direction: column; gap: 0.5rem; text-align: center; }
+    .section__pic-container { width: auto; height: 46vw; justify-content: center; }
+    .section__text__p2 { font-size: 1.25rem; }
+    .title { font-size: 2rem; }
+    .text-container { text-align: justify; }
+}
+
+/* --------------------------- */
+/* PROJECTS SECTION RESPONSIVE */
+/* --------------------------- */
+
+/* Container & grid */
+#projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Project items */
+#projects .article-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+#projects .project-img {
+    width: 95%;
+    max-width: 300px;
+    height: auto;
+}
+
+/* Project title & buttons */
+#projects .project-title { font-size: 1.25rem; text-align: center; margin: 0.5rem 0; }
+#projects .project-btn { display: block; margin: 0.5rem auto; padding: 0.5rem 1rem; }
+
+/* --------------------------- */
+/* CONTACT SECTION RESPONSIVE */
+/* --------------------------- */
+#contact .contact-info-upper-container,
+#contact .contact-info-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 0.5rem;
+}
+
+#contact .contact-info-container p { font-size: 1rem; }
+
+/* Footer adjustments */
+footer { text-align: center; flex-direction: column; gap: 0.5rem; padding: 1rem; }
+
+/* --------------------------- */
+/* EXTRA SMALL FIXES FOR 320PX & 375PX PHONES */
+/* --------------------------- */
+@media screen and (max-width: 375px) {
+    #projects .project-img { width: 95%; }
+    #projects .project-title { font-size: 1.1rem; }
+    #projects .project-btn { font-size: 0.9rem; padding: 0.4rem 0.8rem; }
+    #contact .contact-info-container { gap: 0.3rem; }
+}
+
+@media screen and (max-width: 320px) {
+    #projects .project-img { width: 95%; }
+    #projects .project-title { font-size: 1rem; }
+    #projects .project-btn { font-size: 0.8rem; padding: 0.3rem 0.6rem; }
+    #contact .contact-info-container { gap: 0.3rem; }
+}
+
+
+/* ===================================== */
+/* EXPERIENCE & PROJECTS - CLEAN MOBILE  */
+/* KEEP CAROUSEL ACTIVE                  */
+/* ===================================== */
+
+@media screen and (max-width: 600px) {
+
+  #experience {
+    margin: 0 5%;
+    height: auto;
+  }
+
+  /* Show 1 slide at a time */
+  #experience .carousel-track {
+    display: flex;
+  }
+
+  #experience .carousel-item{
+    min-width: 100%;
+    max-width: 100%;
+    width: 100%;
+    height: 85vh;             /* Big card like screenshot */
+    padding: 1.8rem 1.4rem;
+    box-sizing: border-box;
+    border-radius: 2rem;
+    overflow-y: auto;
+  }
+
+  /* Center content */
+  #experience .carousel-item h2 {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  #experience .carousel-item h3 {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  #experience .carousel-item ul{
+    padding-left: 1.2rem;
+  }
+
+  #experience .carousel-item li {
+    font-size: 0.9rem;
+    line-height: 1.1rem;
+  }
+
+  /* Arrow positioning */
+  #experience .left-btn {
+    left: 3%;
+  }
+
+  #experience .right-btn {
+    right: 3%;
+  }
+}
+
+
+/* ===================================== */
+/* PROJECTS - CLEAN MOBILE (FIXED) */
+/* ===================================== */
+
+@media screen and (max-width: 600px) {
+
+  #projects {
+    margin: 0;
+    padding: 2rem 0;
+  }
+
+  #projects .carousel-wrapper {
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #projects .carousel-container {
+    overflow: hidden;
+    width: 100%;
+  }
+
+  /* Show 1 slide at a time */
+  #projects .carousel-track {
+    display: flex;
+    gap: 1.5rem;
+    padding-left: 8vw;
+    padding-right: 8vw;
+  }
+
+  #projects .carousel-item {
+    min-width: 85%;
+    height: 40vh;
+    padding: 1.5rem;
+    border-radius: 2rem;
+    overflow-y: auto;
+  }
+
+  /* Headings */
+  #projects .carousel-item h2 {
+    text-align: left;
+    font-size: 1.2rem;
+  }
+
+  #projects .carousel-item h3 {
+    text-align: left;
+    font-size: 0.9rem;
+  }
+
+  /* Text */
+  #projects .carousel-item p,
+  #projects .carousel-item li {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  #projects .carousel-item ul {
+    padding-left: 1.2rem;
+  }
+
+  /* Images */
+  .project-image-wrapper {
+    width: 100%;
+    height: 180px;
+    margin: 1rem 0;
+    border-radius: 1.5rem;
+  }
+
+  /* Buttons */
+  #projects .btn-container {
+    margin-top: 1rem;
+  }
+
+  /* Arrows (Match your Apple glass style) */
+  #projects .carousel-btn {
+    width: 44px;
+    height: 44px;
+    font-size: 1.3rem;
+  }
+
+  #projects .left-btn {
+    left: 3%;
+  }
+
+  #projects .right-btn {
+    right: 3%;
+  }
+
+}
+
+/* PROJECT IMAGE WRAPPER (PREVENT STRETCHING) */
+
+.project-image-wrapper {
+  width: 100%;
+  height: 180px;
+  border-radius: 1.5rem;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f5f5f7;
+}
+
+.project-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ===================================== */
+/* EXPERIENCE & PROJECTS - CLEAN MOBILE  */
+/* VERTICAL STACKED FULL SCROLL          */
+/* ===================================== */
+
+@media screen and (max-width: 600px) {
+
+  #experience {
+    margin: 0 5%;
+    height: auto;
+  }
+
+  /* Break out of the sliding track layout so pages stack naturally */
+  #experience .experience-slider-window {
+    overflow: visible !important;
+    width: 100% !important;
+  }
+
+  #experience .experience-slider-track {
+    display: flex !important;
+    flex-direction: column !important; /* Stack pages vertically */
+    transform: none !important;        /* Disable JavaScript slider shifts */
+    gap: 1.5rem !important;
+    width: 100% !important;
+  }
+
+  #experience .carousel-page {
+    flex: none !important;
+    width: 100% !important;
+    padding: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1.5rem !important;
+  }
+
+  /* Force the side-by-side containers to stack as single items */
+  #experience .experience-slider-window .about-containers {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 1.5rem !important;
+    width: 100% !important;
+  }
+
+  /* Full-width boxes that expand naturally with text length */
+  #experience .experience-slider-window .details-container {
+    min-width: 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    height: auto !important;          /* Expands with content */
+    max-height: none !important;      /* Removes inner clipping scrolls */
+    padding: 1.8rem 1.4rem !important;
+    box-sizing: border-box !important;
+    border-radius: 2rem !important;
+    overflow-y: visible !important;   /* Let text flow down naturally */
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  /* Hide carousel arrows and navigation dots on mobile */
+  #experience .carousel-arrow,
+  #experience .left-arrow,
+  #experience .right-arrow,
+  #experience .carousel-dots {
+    display: none !important;
+  }
+
+  /* Typography formatting rules */
+  #experience .experience-slider-window .details-container h2,
+  #experience .experience-slider-window .details-container h3 {
+    text-align: center !important;
+    font-size: 1.2rem !important;
+    width: 100%;
+  }
+
+  #experience .experience-slider-window .article-container {
+    padding-left: 0.5rem !important;
+    width: 100% !important;
+  }
+
+  #experience .experience-slider-window .details-container li {
+    font-size: 0.95rem !important;
+    line-height: 1.4rem !important;
+    text-align: left !important;
+  }
+}
