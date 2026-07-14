@@ -9,6 +9,8 @@
 }
 
 @media screen and (max-width: 1200px) {
+
+    
     #desktop-nav {
         display: none;
     }
@@ -37,6 +39,7 @@
         width: 275px;
         height: 275px;
         margin: 0 auto 2rem;
+        z-index: 1 !important;
     }
     .about-containers {
         margin-top: 0;
@@ -193,7 +196,13 @@
 
 @media screen and (max-width: 1200px) {
     #desktop-nav { display: none; }
-    #hamburger-nav { display: flex; }
+    #hamburger-nav { 
+        display: flex;
+        position: relative; /* Keeps your original positioning style intact */
+        z-index: 1000 !important; /* Forces the entire navbar to stack in front of the picture */
+        background: transparent !important; /* Removes navigation bar background */
+        background-color: transparent !important;
+    }
     #experience, .experience-details-container { margin-top: 2rem; }
     #profile, .section-container { display: block; }
     .arrow { display: none; }
@@ -203,6 +212,36 @@
         width: 275px;
         height: 275px;
         margin: 0 auto 2rem;
+    }
+    .menu-links {
+        z-index: 1001 !important;
+        background: transparent !important;
+        box-shadow: none !important;
+        border: none !important
+    }
+
+    /* APPLE FULL-SCREEN BLUR OVERLAY */
+    /* Creates a hidden layer across the entire screen */
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        background: rgba(255, 255, 255, 0.4); /* Soft white Apple tint */
+        z-index: 999; /* Sits exactly behind the menu, but in front of everything else */
+        opacity: 0;
+        pointer-events: none; /* Allows clicking through it when closed */
+        transition: opacity 0.3s ease; /* Smooth fade-in effect */
+    }
+
+    /* When the menu is active, fade the full-screen blur into view */
+    body.nav-open::before {
+        opacity: 1;
+        pointer-events: auto; /* Blocks interactions with background content while open */
     }
     .about-containers { margin-top: 0; }
 }
