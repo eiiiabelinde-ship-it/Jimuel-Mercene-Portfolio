@@ -5,6 +5,7 @@ function toggleMenu() {
     icon.classList.toggle("open");
 
     document.body.classList.toggle("nav-open");
+
 }
 
 /* SCROLLING EFFECT */
@@ -130,4 +131,3 @@ window.addEventListener('DOMContentLoaded', () => {
     createDots();       // 1. Build dots list automatically based on markup pages count
     startAutoScroll();  // 2. Begin timer countdown loop
 });
-
